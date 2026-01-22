@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hackea.me | Cybersecurity & Networking</title>
+    <meta name="description" content="Progreso en redes y seguridad informática. Personal portfolio of Mike.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="overlay"></div>
+
+    <header class="terminal-header">
+        <div class="logo">
+            <span class="prompt">root@hackea.me:~#</span> <span class="blink">_</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">[ ./home ]</a></li>
+                <li><a href="#about">[ ./about ]</a></li>
+                <li><a href="#logs">[ ./logs ]</a></li>
+                <li><a href="#contact">[ ./contact ]</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- Sections will be injected here or toggled -->
+        <section id="home" class="active-section">
+            <div class="terminal-window">
+                <div class="terminal-bar">
+                    <div class="btn red"></div>
+                    <div class="btn yellow"></div>
+                    <div class="btn green"></div>
+                    <span class="title">user_profile.sh</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="output-text" id="typing-effect"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="hidden-section">
+            <h2>> cat about_me.txt</h2>
+            <div class="content-block">
+                <p>Estudiante apasionado de redes y seguridad informática.</p>
+                <p>Explorando vulnerabilidades, asegurando sistemas y aprendiendo cada día.</p>
+                <br>
+                <h3>> skills --list</h3>
+                <ul class="skill-list">
+                    <li>[+] Networking (CCNA In Progress)</li>
+                    <li>[+] Linux Administration</li>
+                    <li>[+] Ethical Hacking Basics</li>
+                    <li>[+] Python / Bash Scripting</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="logs" class="hidden-section">
+            <h2>> ls -la ./logs</h2>
+            <div class="log-entry">
+                <span class="date">[2023-10-27]</span>
+                <span class="permission">-rwxr-x---</span>
+                <span class="filename">inicio_proyecto.md</span>
+                <p class="summary">Arrancando el sitio web personal hackea.me...</p>
+            </div>
+            <!-- More logs to come -->
+        </section>
+
+        <section id="contact" class="hidden-section">
+            <h2>> ./init_contact.sh</h2>
+            <div class="content-block">
+                <p>Escríbeme encrypted o en texto plano:</p>
+                <a href="mailto:mike@hackea.me" class="contact-link">mike@hackea.me</a>
+                <br><br>
+                <div class="socials">
+                    <a href="#" target="_blank">[ GitHub ]</a>
+                    <a href="#" target="_blank">[ LinkedIn ]</a>
+                    <a href="#" target="_blank">[ Twitter ]</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>SYSTEM STATUS: <span class="status-ok">ONLINE</span> | UPTIME: <span id="uptime">00:00:00</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
